@@ -76,8 +76,8 @@ estimated_positions = np.array(estimated_positions)
 # ---------- 3. الرسم البياني — قارن بعينك ----------
 
 plt.figure(figsize=(10, 6))
-#plt.plot(true_positions, label="real position", linewidth=2)
-#plt.plot(measured_positions, label="measured position", linestyle="--", alpha=0.6)
+plt.plot(true_positions, label="real position", linewidth=2)
+plt.plot(measured_positions, label="measured position", linestyle="--", alpha=0.6)
 plt.plot(estimated_positions, label="estimated position (filtered)", linewidth=2)
 plt.xlabel("الخطوة الزمنية (frame)")
 plt.ylabel("الموقع (متر)")
